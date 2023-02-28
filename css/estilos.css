@@ -208,7 +208,21 @@ footer{
     mask-image: url("../img/background-footer.svg");
     -webkit-mask-size: cover;
     mask-size: cover;
+    transition-property:all;
+    transition-duration: 5s;
 }
+
+
+
+
+
+footer:hover
+{
+background:linear-gradient(to top left, var(--color-verde), var(--color-azul));
+text-shadow: 0 0 5px #070707;
+}
+
+
 
 
 .box__footer .logo{
@@ -224,6 +238,8 @@ footer{
     background-position: center;
    
 }
+
+
 
 
 .box__footer .logo h1{
