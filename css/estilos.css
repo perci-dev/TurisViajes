@@ -5,10 +5,13 @@
     --color-rojo:rgb(255, 25, 0);
     
 }
+
+
 *{
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+
 }
 /* inicio de header*/
 header{
@@ -363,12 +366,7 @@ text-align: center;
     height: 160px;   
    
 }
-.comentarios-info img{
-    width: 140px;
-    height: 140px;
-    border-radius: 50%;
-    
-}
+
 
 
 .container-nosotros h2{
@@ -1040,3 +1038,9 @@ hr{
    width: 100%;
  }
    
+ .comentarios-info img{
+    width: 140px;
+    height: 140px;
+    border-radius: 50%;
+    
+}
