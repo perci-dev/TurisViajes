@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Turisviajes-Inicio</title>
     <link rel="stylesheet" href="./css/estilos.css">
-    <script src="http://kit.fontawesome.com/41bcea2ae3.js" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/f90eebff96.js" crossorigin="anonymous"></script>
 </head>
 <body>
     <header>
@@ -122,10 +122,10 @@
 
             <div class="box__footer">
                 <h2>Redes Sociales</h2>
-                <a href="#"> <i class="fab fa-facebook-square"></i> Facebook</a>
-                <a href="#"><i class="fab fa-twitter-square"></i> Twitter</a>
-                <a href="#"><i class="fab fa-linkedin"></i> Linkedin</a>
-                <a href="#"><i class="fab fa-instagram-square"></i> Instagram</a>
+                <a href="#"><i class="fa-brands fa-facebook"></i> Facebook</a>
+                <a href="#"><i class="fa-brands fa-twitter"></i> Twitter</a>
+                <a href="#"><i class="fa-brands fa-linkedin"></i> Linkedin</a>
+                <a href="#"><i class="fa-brands fa-instagram"></i> Instagram</a>
             </div>
 
         </div>
@@ -139,10 +139,15 @@
     <script>
         const lugares = [
             {nombre: 'Piura', costo:500},
-            {nombre: 'Ayabaca', costo:500},
-            {nombre: 'Sechura', costo:500},
-            {nombre: 'Cusco', costo:500},
-            {nombre: 'Paita', costo:500},
+            {nombre: 'Ayabaca', costo:800},
+            {nombre: 'Sechura', costo:600},
+            {nombre: 'Cusco', costo:1000},
+            {nombre: 'Puno', costo:1000},
+            {nombre: 'Paita', costo:300},
+            {nombre: 'Ayacucho', costo:500},
+            {nombre: 'Lima', costo:500},
+            {nombre: 'Chiclayo', costo:900},
+            {nombre: 'Colan', costo:500},
         ]
         const buscador = document.querySelector('#buscador');
         const boton = document.querySelector('#boton');
@@ -161,7 +166,6 @@
                 resultado.innerHTML +=`<li>Lugar no disponible....</li>`
                 
             }
-
         }
 
         boton.addEventListener('click', filtrar);
