@@ -165,7 +165,7 @@ nav .logo h2:first-letter{
 .referente{
     position: absolute;
     top: 45%;
-    left:40%;
+    left: 40% !important;
     right: 0px;
     bottom: 0px;
     margin: auto;
@@ -216,7 +216,7 @@ li a.active, li a:hover{
     font-size: 20px;
 }
 .checkbtn{
-    font-size: 50px;
+    font-size: 30px;
     color: #fff;
     float: right;
     line-height: 80px;
@@ -232,11 +232,43 @@ li a.active, li a:hover{
 
 
 @media (max-width: 952px){
-    
-    nav .menu li a{
-        font-size: 20px;
+    @keyframes vuelo{
+        from{
+            left:0%;
+            top: 0%;
+        }
+        to{
+            left:80%;
+            top: 40%;
+            width: 100%;
+        }
+        
     }
+    .vuelo{
+        position: absolute;
+        width: 300.5px;
+        height: 260.5px;
+        left: 50%;
+        top: 40%;
+        animation-name: vuelo;
+        animation-duration: 6s;
+        animation-iteration-count:initial;
+    }
+    .vuelo img{
+        width: 50%;
+    }
+    nav .menu li a{
+        font-size: 16px;
+    }
+    
 
+    nav .logo{
+        width: 30%;
+    }
+    nav .logo h2{
+         font-size: 30px;
+      
+    }
     
 }
 
@@ -247,7 +279,7 @@ li a.active, li a:hover{
     }
     .referente{
         left:calc(40% - 80px);
-        font-size: 3rem;
+        font-size: 2.5rem;
     }
     .menu{
         position: fixed;
@@ -266,12 +298,12 @@ li a.active, li a:hover{
     nav .menu li{
         display: flex;
         flex-direction: column;
-        margin: 50px 0;
+        margin: 30px 0;
         line-height: 30px;
         
     }
     nav .menu li a{
-        font-size: 30px;
+        font-size: 18px;
         transition: all;
         transform-origin:left;
         transition-duration: 3s;
@@ -284,7 +316,7 @@ li a.active, li a:hover{
     li a:hover, li a.active{
         border-bottom: solid 3px var(--color-verde);
         text-shadow: 0 2px 0 var(--color-verde),  0 4px 0 rgb(255, 25, 0);
-        font-size: 30px;
+        font-size: 20px;
     }
     
         #check:checked ~ .menu{
