@@ -237,15 +237,17 @@ li a.active, li a:hover{
         font-size: 20px;
     }
 
-    .referente{
-     left:calc(40% - 80px);
-     font-size: 3rem;
+    
 }
 
 @media (max-width: 858px){
     .checkbtn{
         display: block;
 
+    }
+    .referente{
+        left:calc(40% - 80px);
+        font-size: 3rem;
     }
     .menu{
         position: fixed;
