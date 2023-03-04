@@ -165,7 +165,7 @@ nav .logo h2:first-letter{
 .referente{
     position: absolute;
     top: 45%;
-    left:calc(40% - 80px);
+    left:40%;
     right: 0px;
     bottom: 0px;
     margin: auto;
@@ -236,6 +236,10 @@ li a.active, li a:hover{
     nav .menu li a{
         font-size: 20px;
     }
+
+    .referente{
+     left:calc(40% - 80px);
+     font-size: 3rem;
 }
 
 @media (max-width: 858px){
