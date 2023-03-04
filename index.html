@@ -12,19 +12,27 @@
 </head>
 <body>
     <header>
-        <div class="logo">
-            <h2>TURISVIAJES</h2>
-        </div>
-        
+
         <nav>
-            <ul class="menu">
-                <li class="menu-item"><a href="./index.html">Inicio</a></li>
-                <li class="menu-item"><a href="./pages/nosotros.html">Nosotros</a></li>
-                <li class="menu-item"><a href="./pages/servicios.html">Servicios</a></li>
-                <li class="menu-item"><a href="./pages/galeria.html">Galería</a></li>
-                <li class="menu-item"><a href="./pages/contacto.html">Contácto</a></li>
-            </ul>
-        </nav> 
+            <input type="checkbox" id="check">
+            <label for="check" class="checkbtn">
+                <i class="fas fa-bars"></i>
+            </label>
+            
+                <a href="../index.html" class="enlace logo">
+                    <h2>TURISVIAJES</h2>
+                </a>
+                <ul class="menu">
+                    <li><a class="active" href="./index.html">Inicio</a></li>
+                    <li><a class=""href="./pages/nosotros.html">Nosotros</a></li>
+                    <li><a class=""href="./pages/servicios.html">Servicios</a></li>
+                    <li><a class=""href="./pages/galeria.html">Galería</a></li>
+                    <li><a class=""href="./pages/contacto.html">Contacto</a></li>
+                </ul>
+            
+            
+        </nav>
+       
         
     </header>
 
@@ -137,6 +145,10 @@
 
         boton.addEventListener('click', filtrar);
         buscador.addEventListener('keyup', filtrar)
+        
+
+        //menu //
+
         
     </script>
 
