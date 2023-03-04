@@ -216,7 +216,7 @@ li a.active, li a:hover{
     font-size: 20px;
 }
 .checkbtn{
-    font-size: 30px;
+    font-size: 50px;
     color: #fff;
     float: right;
     line-height: 80px;
@@ -224,6 +224,8 @@ li a.active, li a:hover{
     cursor: pointer;
     display: none;
 }
+
+
 #check{
     display: none;
 }
@@ -232,13 +234,14 @@ li a.active, li a:hover{
 @media (max-width: 952px){
     
     nav .menu li a{
-        font-size: 16px;
+        font-size: 20px;
     }
 }
 
 @media (max-width: 858px){
     .checkbtn{
         display: block;
+
     }
     .menu{
         position: fixed;
@@ -248,28 +251,31 @@ li a.active, li a:hover{
         top: 80px;
         left: -100%;
         text-align: center;
-        transition: all .5s;
+        transition: all 2s;
         
+    }
+    .menu:hover{
+        background: linear-gradient(to top right, rgba(25, 166, 0, 0.9), rgba(10, 20, 132, 0.6), rgba(49,23,220, 0.9), rgba(247, 2, 2, 0.6) );
     }
     nav .menu li{
         display: flex;
         flex-direction: column;
         margin: 50px 0;
         line-height: 30px;
-        z-index: 66;
+        
     }
     nav .menu li a{
-        font-size: 20px;
+        font-size: 30px;
         transition: all;
         transform-origin:left;
         transition-duration: 3s;
-}
+    }
         
     }
     li a:hover, li a.active{
     border-bottom: solid 3px var(--color-verde);
     text-shadow: 0 2px 0 var(--color-verde),  0 4px 0 rgb(255, 25, 0);
-    font-size: 25px;
+    font-size: 30px;
 }
 
     #check:checked ~ .menu{
@@ -282,9 +288,7 @@ li a.active, li a:hover{
   
 }
 
-.vuelo img{
-    width: 50%;
-}
+
 
 
 /* fin de header*/
