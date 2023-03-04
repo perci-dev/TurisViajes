@@ -270,23 +270,27 @@ li a.active, li a:hover{
         transform-origin:left;
         transition-duration: 3s;
     }
-        
+
+    .vuelo{
+        display: none;
+      
     }
     li a:hover, li a.active{
-    border-bottom: solid 3px var(--color-verde);
-    text-shadow: 0 2px 0 var(--color-verde),  0 4px 0 rgb(255, 25, 0);
-    font-size: 30px;
-}
-
-    #check:checked ~ .menu{
-        left:0;
-    }   
+        border-bottom: solid 3px var(--color-verde);
+        text-shadow: 0 2px 0 var(--color-verde),  0 4px 0 rgb(255, 25, 0);
+        font-size: 30px;
+    }
+    
+        #check:checked ~ .menu{
+            left:0;
+        }   
+    }
+    
     
 
-.vuelo{
-    display: none;
-  
-}
+
+
+
 
 
 
