@@ -11,6 +11,7 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+    
 
 }
 /* inicio de header*/
@@ -565,50 +566,16 @@ font-weight: bold;
 /*fin servicios*/
 
 /*galeria*/
-.container-galeria{
-    position: relative;
+
+#galeria .col-lg-3{
+    margin: 0 !important;
+    padding: 25px;
+}
+#galeria img{
     width: 100%;
-    height: 1250px;    
+    height: 250px;
 }
 
-.container-galeria .galeria2{
-    width: 100%;
-    height: 500px;
-    padding-top: 30px;
-}
-
-.container-galeria .galeria2 .img2{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-bottom: 50px;
-}
-.container-galeria .galeria2 .img2 img{
-    width: 16rem;
-    height: 16rem;
-    margin-left: 30px;
-    border-radius: 20px;
-    box-shadow: 8px 0 5px 1px #d9d9d9;
-    
-    
-}
-
-.img1{
-    width: 100%;
-    height: 50%;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    
-}
-.img1 img {    
-    width: 12rem;
-    height: 12rem;
-    border-radius: 20px;
-    box-shadow: 3px 0 5px 1px #d9d9d9;
-    border-bottom: 3px solid #445656;
- 
-}
 /*fin galeria*/
 
 /*contacto*/
@@ -944,21 +911,23 @@ text-shadow: 0 0 5px #070707;
     margin-bottom: 30px;
     color: #ffffff;
     font-weight: 700;
+    font-size: 25px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
 .box__footer a{
     margin-top: 10px;
     color: #ffffff;
     font-weight: 600;
+    font-size: 18px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
 .box__footer a:hover{
     opacity: 0.8;
 }
 
-.box__footer a .fab{
-    font-size: 20px;
-}
+
 
 .box__copyright{
     max-width: 1200px;
@@ -970,6 +939,9 @@ text-shadow: 0 0 5px #070707;
 .box__copyright p{
     margin-top: 20px;
     color: #fffefe;
+    font-size: 18px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: 300;
 }
 
 .box__copyright hr{
