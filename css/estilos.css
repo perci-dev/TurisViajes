@@ -889,9 +889,25 @@ font-weight: bold;
     cursor: pointer;
 }
 
-.bloque2 a:hover{
+
+.fa-brands{
+    transition: all;
+    transition-duration: 6s;
+
+}
+
+.bloque2 a:hover {
     border-bottom: 2px solid #fff;
 }
+.bloque2 a:hover .fa-brands{
+   font-size: 20px;
+   margin-left: 5px;
+   color: #fff;
+   transform: rotate(1440deg)
+}
+
+
+
 .contacto .contacto-info .contact{
     width: 49%;
     height: 480px;
@@ -916,6 +932,8 @@ font-weight: bold;
 
 .contacto-info-text h4{
     font-size: 18px;
+    color: var(--color-rojo);
+    text-shadow: 1px 2px 4px 6px #ffffff;
     margin-bottom: 15px;
   
 }
