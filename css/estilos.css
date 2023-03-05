@@ -12,7 +12,6 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-    
 
 }
 /* inicio de header*/
@@ -333,19 +332,10 @@ li a.active, li a:hover{
         
       
     }
-    
-    
-
-
-
-
-
-
-
 
 /* fin de header*/
 
-/*inicio*/
+
  /*INICIO*/
 
  .contenedor{
@@ -862,24 +852,28 @@ font-weight: bold;
 
 /*contacto*/
 .container-contacto{
+    width: 100%;
+    margin: 20px auto;
     color: #000f;
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     font-weight: bold;
-    margin: 30px;
+    
 }
 
 .contacto{
     width: 100%;
-    height: 550px;
-    margin-left: 10px;
+    max-width: 1200px;
+    padding: 10px;
+    margin: 20px auto;
     
 }
 
 .contacto .contacto-info{
-    max-width: 100%;
-    height: 520px;
+    width: 100%;
+    padding: 20px 0px;
+    max-width: 1200px;
+    margin: 20px auto;
     margin-top: 15px;
-    background: rgb(255, 255, 255);
     box-shadow: 3px 0 5px 1px #d9d9d9;
     border-radius: 20px;
     display: flex;
@@ -887,6 +881,17 @@ font-weight: bold;
     align-items: center;
 }
 
+.bloque2 a{
+    text-decoration: none;
+    color: #fff;
+    font-weight: 600;
+    margin-left: 15px;
+    cursor: pointer;
+}
+
+.bloque2 a:hover{
+    border-bottom: 2px solid #fff;
+}
 .contacto .contacto-info .contact{
     width: 49%;
     height: 480px;
@@ -918,23 +923,25 @@ font-weight: bold;
 .contacto-info-text p{
     font-size: 16px;
     margin-bottom: 10px;
-    color: #6a6a6a;
-    font-weight: 300;
+    color: #ffffff;
+    font-weight: 600;
 }
 .contacto-info-text .bloque{
     width: 90%;
     height: 150px;
-    background: rgb(255, 255, 255);
+    background: linear-gradient(to top right, rgba(32, 1, 45, 0.6),rgba(32, 1, 45, 0.6),  rgba(23, 220, 128, 0.9) , rgba(32, 1, 45, 0.9), rgba(23, 220, 128, 0.6));
     box-shadow: 3px 0 5px 1px #d9d9d9;
     margin-bottom: 30px;
+    border-radius: 20px;
     padding: 10px 10px 10px 20px;
 }
 
 .contacto-info-text .bloque1{
     width: 90%;
     height: 150px;
-    background: rgb(255, 255, 255);
+    background: linear-gradient(to top right, rgba(32, 1, 45, 0.6),rgba(32, 1, 45, 0.6),  rgba(23, 220, 128, 0.9) , rgba(32, 1, 45, 0.9), rgba(23, 220, 128, 0.6));
     box-shadow: 3px 0 5px 1px #d9d9d9;
+    border-radius: 20px;
     margin-bottom: 30px;
     padding: 20px;
 }
@@ -945,7 +952,8 @@ font-weight: bold;
     display: flex;
     justify-content: space-around;
     align-items: center;
-    background: rgb(255, 255, 255);
+    background: linear-gradient(to top right, rgba(32, 1, 45, 0.6),rgba(32, 1, 45, 0.6),  rgba(23, 220, 128, 0.9) , rgba(32, 1, 45, 0.9), rgba(23, 220, 128, 0.6));
+    border-radius: 20px;
     box-shadow: 3px 0 5px 1px #d9d9d9;
     margin-bottom: 30px;
     padding: 20px;
@@ -959,19 +967,21 @@ font-weight: bold;
 }
 
 
-h3{
+.container-contacto h3{
     text-align: center;
     margin-bottom: 20px;
-    color: #e8293b;
+    color: #ffffff;
+    font-weight: 900;
     font-size: 25px;
 }
 
 .form {
-    width: 100%;
-    height: 400px;
-    margin-left: 10px;
-    background: rgb(255, 255, 255);
+    width: 90%;
+    max-width: 1200px;
+    margin: 20px auto;
+    background: linear-gradient(to top right, rgba(49,23,220, 0.9), rgba(18, 192, 12, 0.6), rgba(49,23,220, 0.9), rgba(135, 255, 87, 0.6) ); 
     box-shadow: 3px 0 5px 1px #070707;
+    border-radius: 20px;
 
 }
 
@@ -984,6 +994,7 @@ h3{
 
 .form form .mensaje{    
     display: flex;
+    padding: 10px 0px 22px 0px;
     flex-direction: column;
     align-items: center;
     justify-content: center;
@@ -996,22 +1007,35 @@ h3{
 }
 
 .form form .mensaje #nombre{
+    background-color: rgba(11, 17, 130, 0.3);
+    outline: none;
     width: 400px;
-    height: 30px;
+    height: 40px;
     border-radius: 30px;
     box-shadow: 3px 0 5px 1px #f1ecec;
     margin-bottom: 20px;
     text-align: center;
+   
+}
+#nombre::placeholder{
+    color: #fff;
 }
 
+#correo::placeholder{
+    color: #fff;
+}
 .form form .mensaje textarea{
+    background-color: rgba(11, 17, 130, 0.3);
+    color:white;
+    outline: none;
     width: 400px;
     border-radius: 30px;
     box-shadow: 3px 0 5px 1px #f1ecec;
-    margin-bottom: 20px;
     text-align: center;
 }
-
+textarea::placeholder{
+    color: #fff;
+}
 .form form .mensaje2{    
     display: flex;
     flex-direction: column;
@@ -1049,10 +1073,13 @@ h3{
 }
 
 .form form .mensaje2 #correo{
-    width: 430px;
+    background-color: rgba(11, 17, 130, 0.3);
+    color:white;
+    outline: none;
+    width: 400px;
     height: 30px;
     border-radius: 30px;
-    box-shadow: 3px 0 5px 1px #f1ecec;
+    box-shadow: 3px 0 5px 1px #08b422;
     margin-bottom: 10px;
     text-align: center;
 }
@@ -1073,7 +1100,7 @@ h3{
     align-items: center;
     font-size: 16px;
     margin-bottom: 5px;
-    color: #6a6a6a;
+    color: #ffffff;
     font-weight: 400;
 }
 
@@ -1088,15 +1115,22 @@ h3{
 }
 
 .form form .mensaje2 .fecha input{
+background-color: rgba(11, 17, 130, 0.3);
 width: 30%;
-height: 20px;
+height: 30px;
 text-align: center;
 border-radius: 20px;
 box-shadow: 3px 0 5px 1px #d9d9d9;
 }
+
+input::placeholder{
+    color:#fff;
+}
 .form form .mensaje2 .fecha select{
+    background-color: rgba(11, 17, 130, 0.3);
+    color: #fff;
     width: 30%;
-    height: 20px;
+    height: 30px;
     text-align: center;
     border-radius: 20px;
     box-shadow: 3px 0 5px 1px #d9d9d9;
@@ -1104,6 +1138,7 @@ box-shadow: 3px 0 5px 1px #d9d9d9;
 
     .btn:hover{
         background-color: green;
+        color:#fff;
 
     }
 
