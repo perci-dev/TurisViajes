@@ -165,7 +165,7 @@ nav .logo h2:first-letter{
 .referente{
     position: absolute;
     top: 45%;
-    left: 40% !important;
+    left: 40%;
     right: 0px;
     bottom: 0px;
     margin: auto;
@@ -220,7 +220,7 @@ li a.active, li a:hover{
     color: #fff;
     float: right;
     line-height: 80px;
-    margin-right: 40px;
+    margin-right: 30px;
     cursor: pointer;
     display: none;
 }
@@ -231,56 +231,27 @@ li a.active, li a:hover{
 }
 
 
-@media (max-width: 952px){
-    @keyframes vuelo{
-        from{
-            left:0%;
-            top: 0%;
-        }
-        to{
-            left:80%;
-            top: 40%;
-            width: 100%;
-        }
-        
-    }
-    .vuelo{
-        position: absolute;
-        width: 300.5px;
-        height: 260.5px;
-        left: 50%;
-        top: 40%;
-        animation-name: vuelo;
-        animation-duration: 6s;
-        animation-iteration-count:initial;
-    }
-    .vuelo img{
-        width: 50%;
-    }
-    nav .menu li a{
-        font-size: 16px;
+ 
+
+@media (max-width: 1024px){
+    .referente{
+        font-size: 3rem;
     }
     
-
-    nav .logo{
-        width: 30%;
-    }
-    nav .logo h2{
-         font-size: 30px;
-      
-    }
-    
-}
-
-@media (max-width: 858px){
     .checkbtn{
         display: block;
 
     }
-    .referente{
-        left:calc(40% - 80px);
-        font-size: 2.5rem;
+    nav .logo{
+        width: 40%;
+        height: 100px;
+    
     }
+    nav .logo h2{
+         font-size: 30px;
+          
+    }
+
     .menu{
         position: fixed;
         width: 100%;
@@ -292,36 +263,80 @@ li a.active, li a:hover{
         transition: all 2s;
         
     }
+    
+        #check:checked ~ .menu{
+            left:0;
+        }   
+    
+   
+    .vuelo{
+        display: none;
+      
+    }
+
     .menu:hover{
         background: linear-gradient(to top right, rgba(25, 166, 0, 0.9), rgba(10, 20, 132, 0.6), rgba(49,23,220, 0.9), rgba(247, 2, 2, 0.6) );
     }
     nav .menu li{
         display: flex;
         flex-direction: column;
-        margin: 30px 0;
+        margin: 20px 0;
         line-height: 30px;
         
     }
     nav .menu li a{
-        font-size: 18px;
+        font-size: 22px;
         transition: all;
         transform-origin:left;
         transition-duration: 3s;
     }
 
-    .vuelo{
-        display: none;
-      
-    }
     li a:hover, li a.active{
         border-bottom: solid 3px var(--color-verde);
         text-shadow: 0 2px 0 var(--color-verde),  0 4px 0 rgb(255, 25, 0);
         font-size: 20px;
     }
+}
+    @media (max-width: 768px){
+        .referente{
+            left: 33%;
+            font-size: 2.5rem;
+        }
+        
+        nav .logo{
+            width: 30%;
+            height: 80px;
+        
+        }
+        nav .logo h2{
+             font-size: 25px;
+        
+          
+        }
+       
+        .referente{
+            left:33%;
+            font-size: 2.5rem;
+        }
+        
+        
+        nav .menu li{
+            margin: 10px 0;
+            line-height: 30px;
+            
+        }
+        nav .menu li a{
+            font-size: 18px;
+            transition: all;
+            transform-origin:left;
+            transition-duration: 3s;
+        }
     
-        #check:checked ~ .menu{
-            left:0;
-        }   
+        .vuelo{
+            display: none;
+          
+        }
+      
     }
     
     
@@ -678,7 +693,7 @@ font-weight: bold;
 
 /*galeria*/
 #galeria .col-lg-3{
-    margin: 0 !important;
+    margin: 0 ;
     padding: 25px;
 }
 #galeria img{
@@ -940,7 +955,7 @@ box-shadow: 3px 0 5px 1px #d9d9d9;
         
     }
 
-  
+
 /*fin contacto*/
 footer{
     position: absolute;
@@ -1078,36 +1093,5 @@ hr{
 
 body{
     background: #000;
-}
-
-#toggle {
-    display: none;
-}
-
-.menu-movil{
-    display: none;
-}
-
-@media only screen and (max-width: 1100px) {
-
- .menu .menu-item{
-        display: none;
-    }
-    .menu-movil{
-        position: absolute;
-        display: flex;
-        font-size: 50px;
-        color: white;
-        cursor: pointer;
-        user-select: none;
-        right: 20px;
-        z-index: 9999;
-    }
-}
-
-#toggle:checked .menu{
-    background-color: red;
-    display: flex;
-    z-index: 99999;
 }
 
